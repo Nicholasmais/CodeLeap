@@ -19,8 +19,3 @@ class CareerSerializer(CustomModelSerializer):
                 }
             }
         }
-
-    
-    def create(self, validated_data):
-        created_data =  Career.objects.create(**validated_data)
-        return CareerSerializer(created_data).data
