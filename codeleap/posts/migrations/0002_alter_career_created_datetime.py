@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name='career',
+            model_name='post',
             name='created_datetime',
             field=models.DateTimeField(auto_now_add=True),
         ),

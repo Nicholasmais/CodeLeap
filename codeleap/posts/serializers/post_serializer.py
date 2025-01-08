@@ -1,9 +1,9 @@
-from ..models.career import Career
+from ..models.post import Post
 from utils.ModelErrorHandling import CustomModelSerializer
 
-class CareerSerializer(CustomModelSerializer):
+class PostSerializer(CustomModelSerializer):
     class Meta:
-        model = Career
+        model = Post
         fields = '__all__'
         extra_kwargs = {
             "username": {

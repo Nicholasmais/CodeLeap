@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models.career import Career
+from .models.post import Post
 # Register your models here.
 
-admin.register(Career)
+admin.register(Post)

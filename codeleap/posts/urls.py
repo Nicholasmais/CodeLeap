@@ -1,7 +1,7 @@
 from django.urls import path
-from posts.views.career import CareerView
+from posts.views.post import PostView
 
 urlpatterns = [
-    path('career/', CareerView.as_view(), name= "career"),
-    path('career/<int:pk>', CareerView.as_view(), name= "career")
+    path('posts/', PostView.as_view(), name= "posts"),
+    path('posts/<int:pk>', PostView.as_view(), name= "posts")
 ]
